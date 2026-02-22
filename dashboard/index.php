@@ -249,7 +249,7 @@ if (is_array($discord_guilds)) {
         const inviteBtn = document.getElementById('btn-invite');
         if (inviteBtn) {
             inviteBtn.addEventListener('click', () => {
-                const inviteUrl = "https://discord.com/oauth2/authorize?client_id=1113403511045107773&permissions=1899359446&scope=bot%20applications.commands";
+                const inviteUrl = "https://discord.com/oauth2/authorize?client_id=1113403511045107773&permissions=2255511571262711&integration_type=0&scope=bot+applications.commands";
                 window.open(inviteUrl, "_blank", "noopener");
             });
         }

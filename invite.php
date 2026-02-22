@@ -8,7 +8,7 @@ $isBot = (bool) preg_match($botRegex, $userAgent);
 
 // Browser-User direkt zur Invite-URL (302; für dauerhaft -> 301)
 if (!$isBot) {
-    header('Location: https://discord.com/oauth2/authorize?client_id=1113403511045107773&permissions=1899359446&scope=bot%20applications.commands', true, 302);
+    header('Location: https://discord.com/oauth2/authorize?client_id=1113403511045107773&permissions=2255511571262711&integration_type=0&scope=bot+applications.commands', true, 302);
     exit;
 }
 
@@ -75,7 +75,7 @@ $bgImage = 'https://cdn.discordapp.com/attachments/1113404918414458991/140591518
 <div class="card">
     <h1>🚀 Astra – Dein All-in-One Discord-Bot</h1>
     <p>Backup-System · Notifier · Minigames · Level&nbsp;2.0 · Economy&nbsp;2.0</p>
-    <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1113403511045107773&permissions=1899359446&scope=bot%20applications.commands">Bot einladen</a>
+    <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1113403511045107773&permissions=2255511571262711&integration_type=0&scope=bot+applications.commands">Bot einladen</a>
 </div>
 </body>
 </html>
