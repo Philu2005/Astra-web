@@ -77,6 +77,13 @@ if ($result->num_rows > 0) {
 </head>
 <body>
 
+<script>
+    if (window.self !== window.top) {
+        const loader = document.getElementById('astra-loader');
+        if (loader) loader.remove();
+    }
+</script>
+
 <div id="astra-loader">
     <div class="astra-loader-bg"></div>
 
