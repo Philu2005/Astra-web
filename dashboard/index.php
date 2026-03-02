@@ -68,6 +68,16 @@ if ($stats['usercount'] > 0) {
 }
 $recent_activity[] = "Dashboard erfolgreich geladen";
 
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'None'
+]);
+
+session_start();
+
 session_start();
 
 if (!isset($_SESSION['access_token'])) {
