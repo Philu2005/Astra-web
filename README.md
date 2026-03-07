@@ -64,7 +64,7 @@ Beispiele:
 
 ```bash
 # Repository klonen
-git clone https://github.com/USERNAME/astra-website.git
+git clone https://github.com/Philu2005/astra-website.git
 cd astra-website
 ```
 
