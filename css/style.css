@@ -4767,42 +4767,54 @@ main.legal-main {
 
     .astra-nav-lang {
         position: sticky;
-        bottom: 0;
-        margin: 18px 18px calc(14px + env(safe-area-inset-bottom));
-        padding: 14px 14px;
-        border-radius: 18px;
+        top: calc(8px + env(safe-area-inset-top));
+        z-index: 21; /* über Links, unter Close */
+        margin: 8px 18px 12px;
+        padding: 8px 10px;
+        border-radius: 16px;
 
         background: linear-gradient(
                 180deg,
-                var(--drawer-bg-top),
-                var(--drawer-bg-bottom)
+                color-mix(in srgb, var(--drawer-bg-top) 88%, transparent),
+                color-mix(in srgb, var(--drawer-bg-bottom) 88%, transparent)
         );
         box-shadow:
-                0 10px 28px rgba(0,0,0,.45),
+                0 6px 18px rgba(0,0,0,.35),
                 inset 0 0 0 1px var(--drawer-border);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(10px) saturate(1.05);
+        -webkit-backdrop-filter: blur(10px) saturate(1.05);
     }
 
     .astra-nav-lang-title {
         display: block;
-        font-size: .72em;
+        font-size: .7em;
         font-weight: 900;
-        letter-spacing: .28em;
+        letter-spacing: .26em;
         text-transform: uppercase;
         color: var(--drawer-title);
-        margin: 0 2px 10px 2px;
+        margin: 0 2px 8px 2px;
         text-align: center;
     }
 
     .astra-nav-lang-list {
         display: flex;
         align-items: center;
-        gap: 10px;
+        justify-content: center;
+        gap: 6px;
+
+        /* Segmented-Bar Look */
+        background: linear-gradient(
+                180deg,
+                color-mix(in srgb, var(--drawer-bg-top) 92%, transparent),
+                color-mix(in srgb, var(--drawer-bg-bottom) 92%, transparent)
+        );
+        border-radius: 999px;
+        padding: 6px;
+        box-shadow:
+                inset 0 0 0 1px var(--drawer-border),
+                0 6px 16px rgba(0,0,0,.25);
 
         overflow-x: auto;
-        padding: 6px 2px 2px 2px;
-
         scroll-snap-type: x proximity;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none; /* Firefox */
@@ -4814,52 +4826,47 @@ main.legal-main {
 
     .astra-nav-lang-list a {
         display: inline-block;
-        padding: 10px 16px;
+        padding: 8px 14px;
         border-radius: 999px;
         font-weight: 900;
         text-decoration: none;
         white-space: nowrap;
 
-        /* Gradient-Border-Trick (bleibt theme-kompatibel) */
-        background:
-                linear-gradient(var(--drawer-bg-top), var(--drawer-bg-top)) padding-box,
-                linear-gradient(90deg, var(--lang-accent), var(--accent-secondary)) border-box;
-        border: 2px solid transparent;
+        background: transparent;
+        border: 0;
 
         color: var(--drawer-link);
-
-        box-shadow:
-                0 6px 18px rgba(0,0,0,.25),
-                inset 0 0 0 1px rgba(255,255,255,.04);
+        text-shadow: 0 0 6px rgba(0,0,0,.15);
 
         transition:
-                transform .15s ease,
-                box-shadow .18s ease,
-                background .18s ease,
-                color .18s ease,
-                filter .18s ease;
+                transform .12s ease,
+                box-shadow .16s ease,
+                background .16s ease,
+                color .16s ease,
+                filter .16s ease;
 
         scroll-snap-align: start;
+        will-change: transform, background, box-shadow;
     }
 
     .astra-nav-lang-list a:hover {
         transform: translateY(-1px);
+        background: var(--drawer-link-hover-bg);
         box-shadow:
-                0 10px 26px var(--drawer-link-glow),
                 inset 0 0 0 1px var(--drawer-link-border);
-        filter: saturate(1.05);
+        filter: saturate(1.04);
     }
 
     .astra-nav-lang-list a:active {
-        transform: scale(.97);
+        transform: scale(.98);
     }
 
     .astra-nav-lang-list a:focus-visible {
         outline: none;
         box-shadow:
                 0 0 0 2px var(--drawer-link-border),
-                0 8px 24px var(--drawer-link-glow),
-                inset 0 0 0 1px rgba(255,255,255,.05);
+                0 6px 18px var(--drawer-link-glow),
+                inset 0 0 0 1px rgba(255,255,255,.06);
     }
 
     .astra-nav-lang-list a.active {
@@ -4871,11 +4878,10 @@ main.legal-main {
         color: var(--nav-btn-text);
 
         box-shadow:
-                0 0 0 2px var(--drawer-link-border),
-                0 12px 32px var(--drawer-link-glow),
+                0 8px 22px var(--drawer-link-glow),
                 inset 0 0 0 1px rgba(255,255,255,.06);
 
-        transform: scale(1.04);
+        transform: translateY(-1px);
     }
 
 }
