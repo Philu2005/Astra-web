@@ -4467,7 +4467,13 @@ main.legal-main {
     }
 
     .astra-nav-toggle {
+        position: static;   /* 🔥 DAS IST DER FIX */
+        transform: none;    /* wichtig wegen translateY */
+        right: auto;
+        top: auto;
+
         display: flex;
+        margin-left: 10px; /* optional spacing */
     }
 
     /* =====================================================
