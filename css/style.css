@@ -5140,6 +5140,20 @@ main.legal-main {
     --legal-card-bg-bottom: rgba(20, 40, 65, 0.75);
     --legal-shadow-dark: rgba(0, 0, 0, 0.55);
     --legal-glow-soft: rgba(106, 255, 234, 0.25);
+
+    /* Harmonisierung – globale Link-/About-/Outline- und Sprach-Akzentwerte */
+    --text-link: var(--accent-primary);
+    --text-link-hover: var(--accent-green-soft);
+
+    --about-link: var(--accent-primary);
+    --about-link-hover: var(--accent-secondary);
+
+    --hero-btn-outline: var(--accent-secondary);
+
+    --lang-accent: var(--accent-primary);
+    --lang-accent-soft: rgba(106, 255, 234, 0.35);
+    --lang-accent-strong: rgba(106, 255, 234, 0.9);
+    --lang-accent-max: rgba(106, 255, 234, 1);
 }
 /* =========================================================
    AURORA DEEP PURPLE – FULL THEME OVERRIDE (ALL PAGES)
@@ -5401,6 +5415,20 @@ main.legal-main {
     --legal-card-bg-bottom: rgba(40, 34, 80, 0.75);
     --legal-shadow-dark: rgba(0, 0, 0, 0.6);
     --legal-glow-soft: rgba(143, 140, 255, 0.25);
+
+    /* Harmonisierung – globale Link-/About-/Outline- und Sprach-Akzentwerte */
+    --text-link: var(--accent-primary);
+    --text-link-hover: var(--accent-green-soft);
+
+    --about-link: var(--accent-primary);
+    --about-link-hover: var(--accent-secondary);
+
+    --hero-btn-outline: var(--accent-secondary);
+
+    --lang-accent: var(--accent-primary);
+    --lang-accent-soft: rgba(143, 140, 255, 0.35);
+    --lang-accent-strong: rgba(143, 140, 255, 0.9);
+    --lang-accent-max: rgba(143, 140, 255, 1);
 }
 
 /* =========================================================
@@ -5663,4 +5691,18 @@ main.legal-main {
     --legal-card-bg-bottom: rgba(18, 24, 55, 0.75);
     --legal-shadow-dark: rgba(0, 0, 0, 0.65);
     --legal-glow-soft: rgba(127, 140, 255, 0.22);
+
+    /* Harmonisierung – globale Link-/About-/Outline- und Sprach-Akzentwerte */
+    --text-link: var(--accent-primary);
+    --text-link-hover: var(--accent-green-soft);
+
+    --about-link: var(--accent-primary);
+    --about-link-hover: var(--accent-secondary);
+
+    --hero-btn-outline: var(--accent-secondary);
+
+    --lang-accent: var(--accent-primary);
+    --lang-accent-soft: rgba(127, 140, 255, 0.35);
+    --lang-accent-strong: rgba(127, 140, 255, 0.9);
+    --lang-accent-max: rgba(127, 140, 255, 1);
 }
