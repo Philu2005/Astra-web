@@ -4456,9 +4456,13 @@ main.legal-main {
     .astra-header-inner {
         height: var(--header-height-mobile);
         padding: 0 18px;
+
         display: flex;
         align-items: center;
-        justify-content: space-between;
+
+        justify-content: flex-start; /* 🔥 FIX */
+        gap: 12px; /* optional sauberer Abstand */
+
         max-width: 100%;
     }
 
@@ -4466,14 +4470,21 @@ main.legal-main {
         display: none;
     }
 
+    .astra-header-actions {
+        margin-left: auto; /* 🔥 schiebt Theme + Hamburger nach rechts */
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Abstand zwischen Theme & Hamburger */
+    }
+
     .astra-nav-toggle {
-        position: static;   /* 🔥 DAS IST DER FIX */
-        transform: none;    /* wichtig wegen translateY */
+        position: static;
+        transform: none;
         right: auto;
         top: auto;
 
         display: flex;
-        margin-left: 0; /* 🔥 FIX */
+        margin-left: 0;
     }
 
     /* =====================================================
