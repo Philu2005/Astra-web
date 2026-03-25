@@ -1430,6 +1430,23 @@ body.nav-open {
     z-index: 1;
 }
 
+/* Full-height background bubbles inside mobile drawer */
+.astra-nav-mobile .astra-nav-bubbles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    overflow: hidden;
+    opacity: .9;
+}
+
+.astra-nav-mobile .astra-nav-bubbles svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 /* =========================
    DRAWER HEADER
    ========================= */
