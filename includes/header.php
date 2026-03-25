@@ -69,7 +69,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/lang.php';
                     <button data-theme="aurora-mint">Aurora Mint</button>
                     <button data-theme="aurora-deep-purple">Aurora Purple</button>
                     <button data-theme="midnight">Midnight</button>
-                    <button data-theme="aurora-sunset">Aurora Sunset</button>
+                    <button data-theme="aurora-neo">Aurora Neo</button>
                 </div>
             </div>
 
