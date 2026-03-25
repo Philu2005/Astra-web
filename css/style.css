@@ -5561,3 +5561,180 @@ main.legal-main {
     --legal-shadow-dark: rgba(0, 0, 0, 0.65);
     --legal-glow-soft: rgba(127, 140, 255, 0.22);
 }
+
+/* =========================
+   ASTRA GLOBAL CLEANUP / CONFLICT FIX
+   Ganz ans Ende der Datei setzen
+   ========================= */
+
+:root {
+    --page-max-width: 1180px;
+    --page-padding-x: 38px;
+    --page-padding-x-tablet: 24px;
+    --page-padding-x-mobile: 18px;
+    --section-gap: 40px;
+    --section-gap-tablet: 32px;
+    --section-gap-mobile: 24px;
+}
+
+/* 1) Globales Sizing & Overflow */
+html { box-sizing: border-box; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: inherit; }
+body { overflow-x: hidden; }
+*:where(:not(html, body, svg, path, circle, line, defs, linearGradient, stop)) { min-width: 0; }
+
+/* 2) Textumbruch global entschärfen */
+body, p, li, dd, dt, blockquote, figcaption, div, span, a, button, input, textarea, select, label,
+h1, h2, h3, h4, h5, h6 { word-break: normal; overflow-wrap: break-word; }
+
+/* Elemente, die nicht umbrechen sollen */
+.astra-logo-text, .astra-navbar, .astra-navbar *, .nav-link, .nav-btn, .astra-label, .astra-badge,
+.lang-dropdown a, .theme-dropdown button, .astra-nav-mobile .nav-link, .astra-nav-mobile .nav-btn {
+    word-break: normal; overflow-wrap: normal; white-space: nowrap;
+}
+
+/* Lange Inhalte dürfen umbrechen */
+.astra-desc, .cta-absatz, .stat-title, .feature-card, .faq-answer, .astra-about-card,
+.astra-about-card p, .astra-about-card li, .astra-faq-section, main p, main li {
+    overflow-wrap: break-word; word-break: normal;
+}
+
+/* 3) Medien & Form-Elemente */
+img, svg, video, canvas, iframe { max-width: 100%; }
+img, svg, video, canvas { display: block; }
+button, input, select, textarea { font: inherit; }
+
+/* 4) Basislayout härten */
+html, body { width: 100%; max-width: 100%; }
+body { padding-top: calc(var(--header-height) + 24px); }
+main {
+    width: min(var(--page-max-width), 100%);
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    padding-left: var(--page-padding-x);
+    padding-right: var(--page-padding-x);
+    padding-bottom: 80px;
+    background: transparent;
+}
+/* doppelte Startabstände neutralisieren */
+main > *:first-child > *:first-child { margin-top: 0 !important; }
+/* einheitlicher vertikaler Fluss */
+main > * + * { margin-top: var(--section-gap); }
+/* Sections unten nicht doppeln */
+main section { margin-bottom: 0; padding-bottom: 0; }
+
+/* 5) Typografie stabilisieren */
+h1, h2, h3, h4 { margin-top: 0; line-height: 1.2; }
+a { text-decoration-skip-ink: auto; }
+
+/* 6) Header / Desktop-Navigation robuster */
+.astra-header { left: 0; right: 0; width: 100%; }
+.astra-header-inner {
+    width: min(var(--page-max-width), 100%);
+    max-width: var(--page-max-width);
+    height: var(--header-height);
+    min-height: var(--header-height);
+    margin: 0 auto;
+    padding-left: var(--page-padding-x);
+    padding-right: var(--page-padding-x);
+    display: flex; align-items: center; justify-content: space-between; gap: 18px;
+}
+.astra-logo, .astra-header-actions, .astra-nav-toggle { flex-shrink: 0; }
+.astra-logo { margin-right: 20px; min-width: 0; }
+.astra-navbar { min-width: 0; flex: 1 1 auto; }
+.astra-navbar ul { display: flex; align-items: center; flex-wrap: nowrap; gap: 24px; min-width: 0; }
+.nav-link, .nav-btn, .lang-btn, .theme-btn, .faq-question, .astra-btn, .astra-nav-close, .astra-nav-toggle {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 7) Dropdowns absichern */
+.lang-switch, .theme-switch { position: relative; }
+.lang-dropdown, .theme-dropdown { right: 0; max-width: min(280px, calc(100vw - 24px)); overflow: hidden; }
+.lang-dropdown a, .theme-dropdown button { width: auto; }
+
+/* 8) Mobile Drawer härten */
+body.nav-open { overflow: hidden; }
+.astra-nav-mobile-overlay { touch-action: manipulation; }
+.astra-nav-mobile { top: 0; right: 0; width: min(100%, 380px); height: 100dvh; max-height: 100dvh; overflow: hidden; }
+.astra-nav-mobile-header {
+    top: 0;
+    padding-top: calc(18px + env(safe-area-inset-top));
+    background: linear-gradient(180deg, rgba(22,19,56,.96) 0%, rgba(22,19,56,.82) 70%, rgba(22,19,56,0) 100%);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+.astra-nav-mobile-scroll {
+    position: relative; flex: 1 1 auto; min-height: 0; height: auto;
+    padding-top: 20px; padding-bottom: calc(40px + env(safe-area-inset-bottom));
+    overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+}
+
+/* 9) Hero / Content Overflow-Fixes */
+.astra-hero-card, .astra-about-card, .stat-card, .feature-card, .faq-item { min-width: 0; }
+.astra-hero-card { isolation: isolate; }
+.astra-hero-content, .astra-hero-content > div { min-width: 0; }
+.hero-headline { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; white-space: normal; }
+.headline-static, .headline-dynamic { display: inline-block; min-width: 0; }
+.headline-dynamic { max-width: 100%; }
+.astra-desc, .cta-absatz { max-width: 100%; }
+
+/* 10) FAQ stabilisieren */
+.faq-question { width: 100%; text-align: left; cursor: pointer; line-height: 1.4; }
+.faq-answer { overflow: hidden; }
+
+/* 11) Utility-Hardening */
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid rgba(101,230,206,.65); outline-offset: 2px; }
+
+/* 12) Responsive */
+@media (max-width: 1100px) {
+    main { padding-left: var(--page-padding-x-tablet); padding-right: var(--page-padding-x-tablet); }
+    .astra-header-inner { padding-left: var(--page-padding-x-tablet); padding-right: var(--page-padding-x-tablet); }
+    .astra-navbar ul { gap: 18px; }
+}
+
+@media (max-width: 920px) {
+    body { padding-top: calc(var(--header-height-mobile) + 20px); }
+    main { padding-left: var(--page-padding-x-mobile); padding-right: var(--page-padding-x-mobile); }
+    .astra-header-inner {
+        height: var(--header-height-mobile); min-height: var(--header-height-mobile);
+        padding-left: var(--page-padding-x-mobile); padding-right: var(--page-padding-x-mobile);
+    }
+    .astra-navbar { display: none; }
+    .astra-header-actions { margin-left: auto; margin-right: 56px; gap: 10px; }
+    .astra-logo { margin-right: 0; }
+    .astra-logo-text { font-size: 1.2em; }
+    main > * + * { margin-top: var(--section-gap-tablet); }
+    .astra-hero-content { padding: 42px 24px 28px; gap: 28px; }
+    h1 { font-size: 2.2em; } h2 { font-size: 1.8em; }
+    .astra-stats { gap: 18px; margin: 32px 0 36px; }
+    .stat-card { flex: 1 1 calc(50% - 9px); min-width: calc(50% - 9px); }
+    .astra-about-card { flex-direction: column; align-items: flex-start; gap: 22px; padding: 28px 24px; }
+    .astra-features-grid { gap: 18px; margin: 32px 0 38px; }
+    .astra-faq-section { margin: 28px auto 40px; padding: 0; }
+}
+
+@media (max-width: 640px) {
+    main > * + * { margin-top: var(--section-gap-mobile); }
+    .lang-switch, .theme-switch, .lang-btn, .theme-btn, .astra-nav-toggle { width: 40px; height: 40px; }
+    .astra-header-actions { gap: 8px; margin-right: 50px; }
+    .astra-logo img { width: 40px; height: 40px; }
+    .astra-logo-text { font-size: 1.05em; }
+    h1 { font-size: 1.8em; line-height: 1.18; }
+    h2 { font-size: 1.5em; }
+    .astra-label-row, .astra-badges-row, .astra-btn-row { gap: 10px; }
+    .astra-btn { width: 100%; text-align: center; padding-left: 20px; padding-right: 20px; }
+    .stat-card { min-width: 100%; flex-basis: 100%; }
+    .astra-nav-mobile { width: 100%; max-width: 100%; border-radius: 24px 0 0 24px; }
+    .astra-nav-mobile .nav-link { padding: 16px 22px; }
+    .astra-nav-mobile .nav-link::after { left: 22px; right: 22px; }
+    .astra-nav-mobile .nav-btn { margin-left: 18px; margin-right: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
