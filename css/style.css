@@ -5989,37 +5989,51 @@ main.legal-main {
    ========================================================= */
 :root[data-theme="aurora-neo"] {
 
-    /* Layout */
+    /* =========================
+       LAYOUT
+    ========================= */
     --header-height: 68px;
     --header-height-mobile: 56px;
 
-    /* Global Backgrounds */
+    /* =========================
+       GLOBAL BACKGROUNDS
+    ========================= */
     --bg-main: #0b0f14;
 
-    /* Text System */
+    /* =========================
+       TEXT SYSTEM
+    ========================= */
     --text-main: #e9f1ff;
     --text-heading: #ffffff;
     --text-muted: #a3b1cc;
     --text-soft: #7e8aa8;
 
-    /* Links (harmonisiert) */
+    /* Harmonisierte Links */
     --text-link: var(--accent-primary);
     --text-link-hover: var(--accent-green-soft);
 
-    /* Scrollbar */
+    /* =========================
+       SCROLLBAR
+    ========================= */
     --scrollbar-bg: #070b10;
     --scrollbar-thumb: linear-gradient(180deg, #22d3ee, #a78bfa);
 
-    /* Selection */
+    /* =========================
+       SELECTION
+    ========================= */
     --selection-bg: rgba(34, 211, 238, 0.35);
     --selection-text: #06121a;
 
-    /* Accents */
+    /* =========================
+       ACCENTS
+    ========================= */
     --accent-primary: #22d3ee;    /* Neon Cyan */
     --accent-secondary: #a78bfa;  /* Soft Violet */
     --accent-green-soft: #99f6ff; /* Hover-Variante */
 
-    /* Loader */
+    /* =========================
+       LOADER
+    ========================= */
     --loader-bg-main: #070b10;
     --loader-bg-gradient-end: #0e1724;
 
@@ -6034,22 +6048,33 @@ main.legal-main {
     --loader-glow-violet: rgba(167, 139, 250, 0.35);
     --loader-glow-violet-soft: rgba(167, 139, 250, 0.22);
 
-    /* Header / Nav */
+    /* =========================
+       HEADER / NAV
+    ========================= */
     --header-bg: rgba(8, 12, 18, 0.92);
     --header-shadow: rgba(34, 211, 238, 0.24);
 
-    --nav-link: #dfe8ff;
-    --nav-link-active: #22d3ee;
+    /* Language button */
+    --lang-btn-bg: rgba(255, 255, 255, 0.08);
+    --lang-btn-border: rgba(255, 255, 255, 0.14);
+    --lang-btn-shadow: rgba(0, 0, 0, 0.35);
 
-    --nav-btn-gradient-start: #22d3ee;
-    --nav-btn-gradient-end: #a78bfa;
-    --nav-btn-text: #06141a;
-    --nav-btn-shadow: rgba(34, 211, 238, 0.32);
-    --nav-btn-shadow-hover: rgba(34, 211, 238, 0.55);
+    /* Language accents */
+    --lang-accent: var(--accent-primary);
+    --lang-accent-soft: rgba(34, 211, 238, 0.35);
+    --lang-accent-strong: rgba(34, 211, 238, 0.9);
+    --lang-accent-max: rgba(34, 211, 238, 1);
 
-    /* Icons */
+    /* Icons / Text */
     --icon-main: #ffffff;
     --icon-secondary: #b6c6ff;
+
+    /* Dropdown (Language/Theme) */
+    --lang-dropdown-bg-top: rgba(14, 22, 36, 0.98);
+    --lang-dropdown-bg-bottom: rgba(10, 18, 30, 0.98);
+    --lang-dropdown-text: #e3efff;
+    --lang-dropdown-text-active: #06141a;
+    --lang-dropdown-text-hover: #ffffff;
 
     /* Logo */
     --logo-bg: #0f172a;
@@ -6057,7 +6082,25 @@ main.legal-main {
     --logo-text: #ffffff;
     --logo-accent: #22d3ee;
 
-    /* Mobile Drawer */
+    /* Navbar links */
+    --nav-link: #dfe8ff;
+    --nav-link-active: #22d3ee;
+
+    /* Nav button (CTA) */
+    --nav-btn-gradient-start: #22d3ee;
+    --nav-btn-gradient-end: #a78bfa;
+    --nav-btn-text: #06141a;
+    --nav-btn-shadow: rgba(34, 211, 238, 0.32);
+    --nav-btn-shadow-hover: rgba(34, 211, 238, 0.55);
+
+    /* Hamburger */
+    --hamburger-gradient-start: #22d3ee;
+    --hamburger-gradient-end: #a78bfa;
+    --hamburger-glow: rgba(34, 211, 238, 0.6);
+
+    /* =========================
+       MOBILE DRAWER
+    ========================= */
     --drawer-bg-main: #0c121b;
     --drawer-bg-top: #0a0f16;
     --drawer-bg-bottom: #101826;
@@ -6067,28 +6110,40 @@ main.legal-main {
     --drawer-glow-tertiary: rgba(153, 246, 255, 0.18);
     --drawer-glow-quaternary: rgba(167, 139, 250, 0.2);
 
+    --drawer-overlay-bg: rgba(6, 10, 18, 0.7);
+
     --drawer-shadow-main: rgba(0, 0, 0, 0.75);
     --drawer-border: rgba(255, 255, 255, 0.06);
 
     --drawer-title: rgba(255, 255, 255, 0.52);
 
+    /* Close button */
+    --drawer-close-bg: rgba(255, 255, 255, 0.10);
+    --drawer-close-hover-bg: rgba(34, 211, 238, 0.22);
+    --drawer-close-icon: #ffffff;
+    --drawer-close-glow: rgba(34, 211, 238, 0.6);
+
+    /* Mobile nav links */
     --drawer-link: #e9f1ff;
     --drawer-link-hover-bg: rgba(34, 211, 238, 0.14);
     --drawer-link-active: #22d3ee;
 
-    --drawer-link-border: rgba(34, 211, 238, 0.4);
-    --drawer-link-glow: rgba(34, 211, 238, 0.5);
+    --drawer-link-accent-soft: rgba(34, 211, 238, 0.16);
+    --drawer-link-border: rgba(34, 211, 238, 0.40);
+    --drawer-link-glow: rgba(34, 211, 238, 0.50);
 
+    /* Drawer CTA */
     --drawer-cta-bg-start: #22d3ee;
     --drawer-cta-bg-end: #a78bfa;
     --drawer-cta-text: #06141a;
-    --drawer-cta-glow: rgba(34, 211, 238, 0.6);
+    --drawer-cta-glow: rgba(34, 211, 238, 0.60);
 
-    /* Hero */
+    /* =========================
+       HERO / CONTENT
+    ========================= */
     --hero-bg-start: #0d1320;
     --hero-bg-mid: #16273f;
     --hero-bg-end: #22d3ee;
-
     --hero-shadow: rgba(34, 211, 238, 0.35);
 
     --hero-text-main: #ffffff;
@@ -6098,52 +6153,81 @@ main.legal-main {
     --hero-accent-secondary: #a78bfa;
     --hero-accent-warm: #cfe9ff;
 
+    /* Labels */
+    --label-bg-default: #1b2330;
+    --label-text-default: #cfe9ff;
+    --label-green-start: #22d3ee;
+    --label-green-end: #7ee9f6;
+    --label-blue-start: #a78bfa;
+    --label-blue-end: #7c9cff;
+    --label-yellow-start: #ffd36b;
+    --label-yellow-end: #ffb347;
+    --label-shadow: rgba(34, 211, 238, 0.12);
+
+    /* Buttons */
     --hero-btn-main-start: #22d3ee;
     --hero-btn-main-end: #a78bfa;
     --hero-btn-text-dark: #06141a;
+    --hero-btn-outline: var(--accent-secondary);
     --hero-btn-shadow: rgba(34, 211, 238, 0.45);
     --hero-btn-hover-shadow: rgba(34, 211, 238, 0.75);
 
-    /* Cards / Panels */
-    --card-bg-soft: rgba(18, 27, 44, 0.55);
-    --card-bg-strong: rgba(14, 22, 36, 0.68);
-
-    --card-shadow-soft: rgba(34, 211, 238, 0.16);
-    --card-shadow-strong: rgba(34, 211, 238, 0.3);
-
-    /* Badges / Labels */
+    /* Badges */
     --badge-bg: rgba(255, 255, 255, 0.12);
     --badge-text: #edf4ff;
-
     --badge-mint-bg: rgba(34, 211, 238, 0.22);
     --badge-mint-text: #aef7ff;
-
+    --badge-violet-bg: rgba(167, 139, 250, 0.22);
+    --badge-violet-text: #efeaff;
+    --badge-yellow-bg: rgba(255, 240, 200, 0.15);
+    --badge-yellow-text: #ffe6b3;
     --badge-blue-bg: rgba(167, 139, 250, 0.20);
     --badge-blue-text: #efeaff;
+
+    /* Cards */
+    --card-bg-soft: rgba(18, 27, 44, 0.55);
+    --card-bg-strong: rgba(14, 22, 36, 0.68);
+    --card-shadow-soft: rgba(34, 211, 238, 0.16);
+    --card-shadow-strong: rgba(34, 211, 238, 0.30);
 
     /* Stats */
     --stat-bg: rgba(20, 32, 52, 0.45);
     --stat-number: #22d3ee;
     --stat-title: #e6f0ff;
 
-    /* FAQ / Features */
+    /* About */
+    --about-title: #22d3ee;
+    --about-text: #cfe9ff;
+    --about-link: var(--accent-primary);
+    --about-link-hover: var(--accent-secondary);
+
+    /* Features */
+    --feature-hover-shadow: rgba(34, 211, 238, 0.40);
+
+    /* FAQ */
     --faq-bg: rgba(22, 34, 54, 0.45);
     --faq-bg-active: rgba(34, 211, 238, 0.18);
     --faq-question: #22d3ee;
+    --faq-shadow: rgba(0, 0, 0, 0.25);
+    --faq-shadow-hover: rgba(34, 211, 238, 0.22);
 
-    --feature-hover-shadow: rgba(34, 211, 238, 0.4);
-
-    /* Commands Page */
+    /* =========================
+       COMMANDS PAGE
+    ========================= */
+    /* Hero */
     --commands-hero-bg-start: #0d1320;
     --commands-hero-bg-mid: #16273f;
     --commands-hero-bg-end: #22d3ee;
     --commands-hero-shadow: rgba(34, 211, 238, 0.35);
 
+    /* Panels */
     --commands-panel-bg-top: rgba(22, 34, 54, 0.55);
     --commands-panel-bg-bottom: rgba(14, 24, 40, 0.65);
+    --commands-panel-radius: 30px;
     --commands-panel-shadow-main: rgba(34, 211, 238, 0.26);
     --commands-panel-shadow-inset: rgba(255, 255, 255, 0.06);
 
+    /* Search */
     --search-bg-start: rgba(10, 18, 30, 0.95);
     --search-bg-mid: rgba(22, 36, 56, 0.95);
     --search-bg-end: rgba(10, 18, 30, 0.95);
@@ -6157,39 +6241,84 @@ main.legal-main {
     --search-glow-soft: rgba(34, 211, 238, 0.35);
     --search-glow-strong: rgba(34, 211, 238, 0.75);
 
+    --search-shadow-dark: rgba(0, 0, 0, 0.55);
+    --search-shadow-focus-dark: rgba(0, 0, 0, 0.75);
+
+    /* Filters */
+    --filter-bg: rgba(255, 255, 255, 0.08);
+    --filter-bg-hover: rgba(255, 255, 255, 0.12);
+    --filter-active-start: var(--accent-primary);
+    --filter-active-end: var(--accent-secondary);
+    --filter-active-text: #06141a;
+    --filter-active-shadow: rgba(34, 211, 238, 0.35);
+    --filter-text: #cfefff;
+
+    /* Accordion */
     --accordion-bg-top: rgba(22, 34, 54, 0.55);
     --accordion-bg-bottom: rgba(14, 24, 40, 0.65);
+    --accordion-radius: 22px;
     --accordion-shadow: rgba(34, 211, 238, 0.25);
     --accordion-title: #22d3ee;
 
+    /* Command items */
     --command-text-main: #e9f1ff;
     --command-text-muted: #a3b1cc;
     --command-name: #b9a7ff;
     --command-strong: #22d3ee;
 
-    /* Status / Report */
+    --command-divider: rgba(34, 211, 238, 0.35);
+    --command-divider-glow: rgba(34, 211, 238, 0.35);
+
+    /* Usage / Code */
+    --usage-bg: rgba(0, 0, 0, 0.35);
+    --usage-text: var(--accent-primary);
+
+    /* =========================
+       STATUS / REPORT PAGE
+    ========================= */
+    /* Hero / Card backgrounds */
     --status-hero-bg-start: #0d1320;
     --status-hero-bg-mid: #16273f;
     --status-hero-bg-end: #22d3ee;
 
-    --status-title: #22d3ee;
-    --status-title-glow: rgba(34, 211, 238, 0.6);
+    --status-hero-shadow-main: rgba(34, 211, 238, 0.28);
+    --status-hero-shadow-glow: rgba(34, 211, 238, 0.22);
+    --status-hero-border: rgba(255, 255, 255, 0.05);
 
+    /* Titles */
+    --status-title: #22d3ee;
+    --status-title-glow: rgba(34, 211, 238, 0.60);
+
+    /* Text */
     --status-text-main: #e9f1ff;
     --status-text-muted: #a3b1cc;
+    --status-text-soft: #cfe5ff;
 
+    /* Status rows */
+    --status-row-border: rgba(255, 255, 255, 0.1);
+
+    /* Badges – base */
+    --status-badge-bg: rgba(255, 255, 255, 0.12);
+    --status-badge-text: #e9f1ff;
+    --status-badge-border: rgba(255, 255, 255, 0.18);
+
+    /* Badges – OK */
     --status-ok-start: #22d3ee;
     --status-ok-end: #a78bfa;
     --status-ok-text: #06141a;
+    --status-ok-glow: rgba(34, 211, 238, 0.22);
 
+    /* Badges – Error */
     --status-err-start: #ff6b8a;
     --status-err-end: #ff9fb3;
     --status-err-text: #3a0814;
 
+    /* Badges – Warning */
     --status-warn-start: #ffd36b;
     --status-warn-end: #ffb347;
     --status-warn-text: #3a2608;
 
+    /* Tabs */
     --status-tab-bg: rgba(255, 255, 255, 0.08);
     --status-tab-text: #e3ebff;
     --status-tab-active-start: #22d3ee;
@@ -6197,22 +6326,27 @@ main.legal-main {
     --status-tab-active-text: #06141a;
     --status-tab-active-shadow: rgba(34, 211, 238, 0.32);
 
+    /* Uptime */
     --uptime-online: #22d3ee;
     --uptime-online-glow: rgba(34, 211, 238, 0.55);
     --uptime-offline: #ff6b8a;
     --uptime-good: #99f6ff;
     --uptime-warn: #ffd36b;
 
+    /* Tooltip */
     --tooltip-bg: rgba(10, 18, 30, 0.95);
     --tooltip-text: #cfe5ff;
     --tooltip-shadow: rgba(0, 0, 0, 0.38);
 
+    /* Stats boxes */
     --stats-box-bg: rgba(0, 0, 0, 0.24);
     --stats-head: #cfe5ff;
     --stats-number: #22d3ee;
 
+    /* Report */
     --report-desc: #d4e6ff;
 
+    /* Problem chips */
     --problem-user-start: #ff7aa2;
     --problem-user-end: #ffb3c6;
     --problem-user-text: #3d0b21;
@@ -6225,16 +6359,20 @@ main.legal-main {
     --problem-discord-end: #a7c8ff;
     --problem-discord-text: #10162a;
 
+    /* Form */
     --form-bg: rgba(255, 255, 255, 0.12);
     --form-shadow: rgba(34, 211, 238, 0.22);
 
+    /* Messages */
     --msg-success-bg: rgba(34, 211, 238, 0.18);
     --msg-success-text: #22d3ee;
 
     --msg-error-bg: rgba(255, 114, 114, 0.18);
     --msg-error-text: #ff7272;
 
-    /* Error / Footer / Legal */
+    /* =========================
+       ERROR / FOOTER / LEGAL
+    ========================= */
     --hero-shadow-soft: rgba(34, 211, 238, 0.28);
     --hero-shadow-strong: rgba(34, 211, 238, 0.42);
     --hero-glow-mint: rgba(167, 139, 250, 0.22);
@@ -6245,9 +6383,11 @@ main.legal-main {
 
     --footer-bg-top: #080c12;
     --footer-bg-bottom: #0e1724;
+
     --footer-text-main: #e9f1ff;
     --footer-text-muted: #a3b1cc;
     --footer-text-soft: #7e8aa8;
+
     --footer-link: #b6c6ff;
     --footer-link-hover: #22d3ee;
 
@@ -6256,17 +6396,15 @@ main.legal-main {
     --legal-shadow-dark: rgba(0, 0, 0, 0.6);
     --legal-glow-soft: rgba(34, 211, 238, 0.24);
 
+    /* Chips */
     --chip-bg: rgba(34, 211, 238, 0.2);
     --chip-border: rgba(34, 211, 238, 0.45);
     --chip-text: #e7fbff;
 
-    /* Harmonisierung – About/Outline/Language Accents */
+    /* =========================
+       HARMONISIERUNG
+    ========================= */
     --about-link: var(--accent-primary);
     --about-link-hover: var(--accent-secondary);
     --hero-btn-outline: var(--accent-secondary);
-
-    --lang-accent: var(--accent-primary);
-    --lang-accent-soft: rgba(34, 211, 238, 0.35);
-    --lang-accent-strong: rgba(34, 211, 238, 0.9);
-    --lang-accent-max: rgba(34, 211, 238, 1);
 }
