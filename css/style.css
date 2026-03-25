@@ -4908,9 +4908,6 @@ main.legal-main {
     --text-muted: #bcd7e6;
     --text-soft: #8faac0;
 
-    --text-link: #6affea;
-    --text-link-hover: #b6fff3;
-
     /* =========================
        SCROLLBAR
     ========================= */
@@ -5178,9 +5175,6 @@ main.legal-main {
     --text-heading: #ffffff;
     --text-muted: #c2bdd8;
     --text-soft: #8f8aa8;
-
-    --text-link: #8f8cff;
-    --text-link-hover: #c8c6ff;
 
     /* =========================
        SCROLLBAR
@@ -5454,9 +5448,6 @@ main.legal-main {
     --text-heading: #ffffff;
     --text-muted: #9aa3c7;
     --text-soft: #6e7699;
-
-    --text-link: #7f8cff;
-    --text-link-hover: #aab4ff;
 
     /* =========================
        SCROLLBAR
