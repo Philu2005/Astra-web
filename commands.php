@@ -154,11 +154,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/lang.php';
                 const item = document.createElement('div');
                 item.className = 'command-item';
 
-                item.innerHTML = `
-                    <div class="cmd-name">${cmd.name}</div>
-                    <div class="cmd-desc">${cmd.description}</div>
-                    <div class="cmd-usage">${cmd.usage}</div>
-                `;
+                const nameEl = document.createElement('div');
+                nameEl.className = 'cmd-name';
+                nameEl.textContent = cmd.name;
+
+                const descEl = document.createElement('div');
+                descEl.className = 'cmd-desc';
+                descEl.textContent = cmd.description;
+
+                const usageEl = document.createElement('div');
+                usageEl.className = 'cmd-usage';
+                usageEl.textContent = cmd.usage;
+
+                item.appendChild(nameEl);
+                item.appendChild(descEl);
+                item.appendChild(usageEl);
 
                 body.appendChild(item);
             });

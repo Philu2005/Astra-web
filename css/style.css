@@ -4628,6 +4628,9 @@ main.legal-main {
     .cmd-usage {
         justify-self: flex-start;
         text-align: left;
+        white-space: normal;        /* erlaubt Zeilenumbruch */
+        word-break: break-word;     /* bricht lange Tokens */
+        overflow-wrap: anywhere;    /* bricht auch ohne Leerzeichen */
     }
 
     .commands-hero-card {
