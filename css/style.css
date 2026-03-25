@@ -4484,6 +4484,12 @@ main.legal-main {
 
         display: flex;
         margin-left: 0;
+        transform: none !important; /* Mobile: keine vertikale Verschiebung */
+    }
+
+    /* Sicherstellen, dass der nav-open-State auf Mobile nicht wieder hochschiebt */
+    body.nav-open .astra-nav-toggle {
+        transform: none !important;
     }
 
     /* =====================================================
