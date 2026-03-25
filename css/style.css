@@ -4473,7 +4473,7 @@ main.legal-main {
         top: auto;
 
         display: flex;
-        margin-left: 10px; /* optional spacing */
+        margin-left: 0; /* 🔥 FIX */
     }
 
     /* =====================================================
