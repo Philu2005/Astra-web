@@ -4544,21 +4544,21 @@ main.legal-main {
     }
 
     /* =====================================================
-       LANGUAGE SWITCH – KOMPLETT AUS DEM MOBILE HEADER
+       LANGUAGE SWITCH – MOBILE: IM HEADER SICHTBAR
        ===================================================== */
 
     .astra-header .lang-switch {
-        display: none !important;
+        display: flex !important;
     }
 
-    /* Sicherheit: alle Animationen im Mobile tot */
+    /* Mobile Interaktionen erlaubt (keine erzwungene Deaktivierung) */
     .lang-switch,
     .lang-switch * {
+        pointer-events: auto !important;
         animation: none !important;
         transition: none !important;
         transform: none !important;
         filter: none !important;
-        pointer-events: none !important;
     }
 
     /* =====================================================
