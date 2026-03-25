@@ -5697,3 +5697,289 @@ main.legal-main {
     --lang-accent-strong: rgba(127, 140, 255, 0.9);
     --lang-accent-max: rgba(127, 140, 255, 1);
 }
+
+/* =========================================================
+   AURORA SUNSET – FULL THEME OVERRIDE (ALL PAGES)
+   ========================================================= */
+:root[data-theme="aurora-sunset"] {
+
+    /* Layout */
+    --header-height: 68px;
+    --header-height-mobile: 56px;
+
+    /* Global Backgrounds */
+    --bg-main: #140c1c;
+
+    /* Text System */
+    --text-main: #fff5fa;
+    --text-heading: #ffffff;
+    --text-muted: #f0cde1;
+    --text-soft: #d9b7ea;
+
+    /* Links (harmonisiert) */
+    --text-link: var(--accent-primary);
+    --text-link-hover: var(--accent-green-soft);
+
+    /* Scrollbar */
+    --scrollbar-bg: #0d0915;
+    --scrollbar-thumb: linear-gradient(180deg, #ff8bd1, #ffb86c);
+
+    /* Selection */
+    --selection-bg: rgba(255, 139, 209, 0.35);
+    --selection-text: #1a0f24;
+
+    /* Accents */
+    --accent-primary: #ff8bd1;    /* Neon Rose */
+    --accent-secondary: #ffb86c;  /* Sunset Apricot */
+    --accent-green-soft: #ffd6a8; /* Warm softer hover */
+
+    /* Loader */
+    --loader-bg-main: #0f0816;
+    --loader-bg-gradient-end: #1b0f26;
+
+    --loader-accent-primary: #ff8bd1;
+    --loader-accent-secondary: #ffb86c;
+    --loader-accent-violet: #a67cff;
+
+    --loader-text: rgba(255, 245, 250, 0.92);
+
+    --loader-glow-primary: rgba(255, 139, 209, 0.65);
+    --loader-glow-primary-soft: rgba(255, 139, 209, 0.35);
+    --loader-glow-violet: rgba(166, 124, 255, 0.35);
+    --loader-glow-violet-soft: rgba(255, 184, 108, 0.28);
+
+    /* Header / Nav */
+    --header-bg: rgba(20, 12, 28, 0.92);
+    --header-shadow: rgba(255, 139, 209, 0.28);
+
+    --nav-link: #ffeafa;
+    --nav-link-active: #ff8bd1;
+
+    --nav-btn-gradient-start: #ff8bd1;
+    --nav-btn-gradient-end: #ffb86c;
+    --nav-btn-text: #2a0f1f;
+    --nav-btn-shadow: rgba(255, 139, 209, 0.35);
+    --nav-btn-shadow-hover: rgba(255, 139, 209, 0.55);
+
+    /* Icons */
+    --icon-main: #ffffff;
+    --icon-secondary: #ffd5ec;
+
+    /* Logo */
+    --logo-bg: #1a0f24;
+    --logo-shadow: rgba(255, 139, 209, 0.28);
+    --logo-text: #ffffff;
+    --logo-accent: #ff8bd1;
+
+    /* Mobile Drawer */
+    --drawer-bg-main: #1a1124;
+    --drawer-bg-top: #140c1c;
+    --drawer-bg-bottom: #2a1736;
+
+    --drawer-glow-primary: rgba(255, 139, 209, 0.35);
+    --drawer-glow-secondary: rgba(255, 184, 108, 0.25);
+    --drawer-glow-tertiary: rgba(217, 183, 234, 0.2);
+
+    --drawer-shadow-main: rgba(0, 0, 0, 0.7);
+    --drawer-border: rgba(255, 255, 255, 0.08);
+
+    --drawer-title: rgba(255, 255, 255, 0.55);
+
+    --drawer-link: #fff1f8;
+    --drawer-link-hover-bg: rgba(255, 139, 209, 0.18);
+    --drawer-link-active: #ff8bd1;
+
+    --drawer-link-border: rgba(255, 139, 209, 0.45);
+    --drawer-link-glow: rgba(255, 139, 209, 0.55);
+
+    --drawer-cta-bg-start: #ff8bd1;
+    --drawer-cta-bg-end: #ffb86c;
+    --drawer-cta-text: #2a0f1f;
+    --drawer-cta-glow: rgba(255, 139, 209, 0.65);
+
+    /* Hero */
+    --hero-bg-start: #1a0f24;
+    --hero-bg-mid: #5a2a72;
+    --hero-bg-end: #ff8bd1;
+
+    --hero-shadow: rgba(255, 139, 209, 0.4);
+
+    --hero-text-main: #ffffff;
+    --hero-text-muted: #ffe1f1;
+
+    --hero-accent: #ff8bd1;
+    --hero-accent-secondary: #ffb86c;
+    --hero-accent-warm: #ffe6c4;
+
+    --hero-btn-main-start: #ff8bd1;
+    --hero-btn-main-end: #ffb86c;
+    --hero-btn-text-dark: #2a0f1f;
+    --hero-btn-shadow: rgba(255, 139, 209, 0.45);
+    --hero-btn-hover-shadow: rgba(255, 139, 209, 0.75);
+
+    /* Cards / Panels */
+    --card-bg-soft: rgba(60, 34, 80, 0.55);
+    --card-bg-strong: rgba(80, 40, 110, 0.65);
+
+    --card-shadow-soft: rgba(255, 139, 209, 0.18);
+    --card-shadow-strong: rgba(255, 139, 209, 0.35);
+
+    /* Badges / Labels */
+    --badge-bg: rgba(255, 255, 255, 0.14);
+    --badge-text: #fff1f8;
+
+    --badge-mint-bg: rgba(255, 139, 209, 0.24);
+    --badge-mint-text: #ffb3e1;
+
+    --badge-blue-bg: rgba(255, 184, 108, 0.22);
+    --badge-blue-text: #fff6ec;
+
+    /* Stats */
+    --stat-bg: rgba(110, 55, 115, 0.45);
+    --stat-number: #ff8bd1;
+    --stat-title: #fff1f8;
+
+    /* FAQ / Features */
+    --faq-bg: rgba(70, 40, 100, 0.45);
+    --faq-bg-active: rgba(255, 139, 209, 0.18);
+    --faq-question: #ff8bd1;
+
+    --feature-hover-shadow: rgba(255, 139, 209, 0.45);
+
+    /* Commands Page */
+    --commands-hero-bg-start: #1a0f24;
+    --commands-hero-bg-mid: #5a2a72;
+    --commands-hero-bg-end: #ff8bd1;
+    --commands-hero-shadow: rgba(255, 139, 209, 0.4);
+
+    --commands-panel-bg-top: rgba(70, 40, 100, 0.55);
+    --commands-panel-bg-bottom: rgba(45, 28, 70, 0.65);
+    --commands-panel-shadow-main: rgba(255, 139, 209, 0.28);
+    --commands-panel-shadow-inset: rgba(255, 255, 255, 0.06);
+
+    --search-bg-start: rgba(40, 22, 60, 0.95);
+    --search-bg-mid: rgba(75, 40, 95, 0.95);
+    --search-bg-end: rgba(40, 22, 60, 0.95);
+
+    --search-text: #fff9fc;
+    --search-text-preview: rgba(255, 230, 245, 0.6);
+
+    --search-border: rgba(255, 139, 209, 0.6);
+    --search-accent: #ff8bd1;
+
+    --search-glow-soft: rgba(255, 139, 209, 0.45);
+    --search-glow-strong: rgba(255, 139, 209, 0.9);
+
+    --accordion-bg-top: rgba(70, 40, 100, 0.55);
+    --accordion-bg-bottom: rgba(45, 28, 70, 0.65);
+    --accordion-shadow: rgba(255, 139, 209, 0.3);
+    --accordion-title: #ff8bd1;
+
+    --command-text-main: #fff1f8;
+    --command-text-muted: #f0cde1;
+    --command-name: #ffb3e1;
+    --command-strong: #ff8bd1;
+
+    /* Status / Report */
+    --status-hero-bg-start: #1a0f24;
+    --status-hero-bg-mid: #5a2a72;
+    --status-hero-bg-end: #ff8bd1;
+
+    --status-title: #ff8bd1;
+    --status-title-glow: rgba(255, 139, 209, 0.65);
+
+    --status-text-main: #fff1f8;
+    --status-text-muted: #f0cde1;
+
+    --status-ok-start: #ff8bd1;
+    --status-ok-end: #ffb86c;
+    --status-ok-text: #2a0f1f;
+
+    --status-err-start: #ff6b8a;
+    --status-err-end: #ff9fb3;
+    --status-err-text: #3a0814;
+
+    --status-warn-start: #ffd479;
+    --status-warn-end: #ffb347;
+    --status-warn-text: #3a2608;
+
+    --status-tab-bg: rgba(255, 255, 255, 0.1);
+    --status-tab-text: #ffeafa;
+    --status-tab-active-start: #ff8bd1;
+    --status-tab-active-end: #ffb86c;
+    --status-tab-active-text: #2a0f1f;
+    --status-tab-active-shadow: rgba(255, 139, 209, 0.35);
+
+    --uptime-online: #ff8bd1;
+    --uptime-online-glow: rgba(255, 139, 209, 0.55);
+    --uptime-offline: #ff6b8a;
+    --uptime-good: #ffc2e8;
+    --uptime-warn: #ffd479;
+
+    --tooltip-bg: rgba(26, 15, 36, 0.95);
+    --tooltip-text: #ffd5ec;
+    --tooltip-shadow: rgba(0, 0, 0, 0.4);
+
+    --stats-box-bg: rgba(0, 0, 0, 0.28);
+    --stats-head: #ffd5ec;
+    --stats-number: #ff8bd1;
+
+    --report-desc: #ffe1f1;
+
+    --problem-user-start: #ff7aa2;
+    --problem-user-end: #ffb3c6;
+    --problem-user-text: #3d0b21;
+
+    --problem-web-start: #ff8bd1;
+    --problem-web-end: #ffb86c;
+    --problem-web-text: #2a0f1f;
+
+    --problem-discord-start: #a67cff;
+    --problem-discord-end: #caa6ff;
+    --problem-discord-text: #230b3d;
+
+    --form-bg: rgba(255, 255, 255, 0.14);
+    --form-shadow: rgba(255, 139, 209, 0.22);
+
+    --msg-success-bg: rgba(255, 139, 209, 0.18);
+    --msg-success-text: #ff8bd1;
+
+    --msg-error-bg: rgba(255, 114, 114, 0.18);
+    --msg-error-text: #ff7272;
+
+    /* Error / Footer / Legal */
+    --hero-shadow-soft: rgba(255, 139, 209, 0.3);
+    --hero-shadow-strong: rgba(255, 139, 209, 0.45);
+    --hero-glow-mint: rgba(255, 184, 108, 0.28);
+    --hero-border-soft: rgba(255, 255, 255, 0.06);
+
+    --error-glow-primary: rgba(255, 139, 209, 0.55);
+    --error-glow-secondary: rgba(166, 124, 255, 0.35);
+
+    --footer-bg-top: #140c1c;
+    --footer-bg-bottom: #1a0f24;
+    --footer-text-main: #fff1f8;
+    --footer-text-muted: #f0cde1;
+    --footer-text-soft: #d9b7ea;
+    --footer-link: #ffb3e1;
+    --footer-link-hover: #ff8bd1;
+
+    --legal-card-bg-top: rgba(70, 40, 100, 0.65);
+    --legal-card-bg-bottom: rgba(45, 28, 70, 0.75);
+    --legal-shadow-dark: rgba(0, 0, 0, 0.6);
+    --legal-glow-soft: rgba(255, 139, 209, 0.28);
+
+    --chip-bg: rgba(255, 139, 209, 0.22);
+    --chip-border: rgba(255, 139, 209, 0.45);
+    --chip-text: #ffeaf7;
+
+    /* Harmonisierung – About/Outline/Language Accents */
+    --about-link: var(--accent-primary);
+    --about-link-hover: var(--accent-secondary);
+    --hero-btn-outline: var(--accent-secondary);
+
+    --lang-accent: var(--accent-primary);
+    --lang-accent-soft: rgba(255, 139, 209, 0.35);
+    --lang-accent-strong: rgba(255, 139, 209, 0.9);
+    --lang-accent-max: rgba(255, 139, 209, 1);
+}
