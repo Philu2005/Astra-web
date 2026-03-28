@@ -1,4 +1,4 @@
-# 🚧 WORK IN PROGRESS – DIESE WEBSITE BEFINDET SICH NOCH IN ENTWICKLUNG 🚧
+# 🚧 WORK IN PROGRESS – DIESE WEBSITE BEFINDET SICH NOCH IN DER ENTWICKLUNG 🚧
 **Viele Funktionen können sich noch ändern, sind unvollständig oder werden aktuell überarbeitet.**
 
 ---
