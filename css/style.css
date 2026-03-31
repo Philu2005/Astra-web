@@ -6410,7 +6410,7 @@ main.legal-main {
 }
 
 /* =========================================================
-   LIGHT THEME – FULL THEME OVERRIDE (ALL PAGES)
+   LIGHT THEME – SOFT / CLEAN OVERRIDE (ALL PAGES)
    ========================================================= */
 :root[data-theme="light"] {
 
@@ -6423,22 +6423,22 @@ main.legal-main {
     /* =========================
        GLOBAL BACKGROUNDS
     ========================= */
-    --bg-main: #f5f8ff;
+    --bg-main: #eef3fb;
 
     /* =========================
        TEXT SYSTEM
     ========================= */
-    --text-main: #1d2742;
+    --text-main: #24324a;
     --text-heading: #10182b;
-    --text-muted: #55627e;
-    --text-soft: #71809c;
+    --text-muted: #5f6e86;
+    --text-soft: #7a889d;
 
     /* =========================
        LINKS / ACCENTS
     ========================= */
-    --accent-primary: #4f8cff;
-    --accent-secondary: #8bb8ff;
-    --accent-green-soft: #2fc7a1;
+    --accent-primary: #4f7fe0;
+    --accent-secondary: #90b2ea;
+    --accent-green-soft: #3aa88f;
 
     --text-link: var(--accent-primary);
     --text-link-hover: var(--accent-green-soft);
@@ -6446,257 +6446,257 @@ main.legal-main {
     /* =========================
        SCROLLBAR
     ========================= */
-    --scrollbar-bg: #e6ecf7;
-    --scrollbar-thumb: #b6c7e8;
+    --scrollbar-bg: #e1e7f1;
+    --scrollbar-thumb: #b0bfd6;
 
     /* =========================
        SELECTION
     ========================= */
-    --selection-bg: rgba(79, 140, 255, 0.22);
+    --selection-bg: rgba(79, 127, 224, 0.18);
     --selection-text: #0f172a;
 
     /* =========================
        LOADER
     ========================= */
-    --loader-bg-main: #f7f9ff;
-    --loader-bg-gradient-end: #e7efff;
+    --loader-bg-main: #f4f7fc;
+    --loader-bg-gradient-end: #e6edf7;
 
-    --loader-accent-primary: #4f8cff;
-    --loader-accent-secondary: #8bb8ff;
-    --loader-accent-violet: #7a5cff;
+    --loader-accent-primary: #4f7fe0;
+    --loader-accent-secondary: #90b2ea;
+    --loader-accent-violet: #7a6be8;
 
-    --loader-text: rgba(17, 24, 39, 0.86);
+    --loader-text: rgba(29, 39, 66, 0.82);
 
-    --loader-glow-primary: rgba(79, 140, 255, 0.35);
-    --loader-glow-primary-soft: rgba(79, 140, 255, 0.2);
-    --loader-glow-violet: rgba(122, 92, 255, 0.2);
-    --loader-glow-violet-soft: rgba(122, 92, 255, 0.14);
+    --loader-glow-primary: rgba(79, 127, 224, 0.22);
+    --loader-glow-primary-soft: rgba(79, 127, 224, 0.14);
+    --loader-glow-violet: rgba(122, 107, 232, 0.16);
+    --loader-glow-violet-soft: rgba(122, 107, 232, 0.10);
 
     /* =========================
        HEADER / NAV
     ========================= */
-    --header-bg: rgba(255, 255, 255, 0.82);
-    --header-shadow: rgba(79, 140, 255, 0.12);
+    --header-bg: rgba(248, 250, 255, 0.82);
+    --header-shadow: rgba(79, 127, 224, 0.10);
 
-    --lang-btn-bg: rgba(79, 140, 255, 0.08);
-    --lang-btn-border: rgba(79, 140, 255, 0.16);
-    --lang-btn-shadow: rgba(15, 23, 42, 0.08);
+    --lang-btn-bg: rgba(79, 127, 224, 0.07);
+    --lang-btn-border: rgba(79, 127, 224, 0.14);
+    --lang-btn-shadow: rgba(15, 23, 42, 0.06);
 
     --lang-accent: var(--accent-primary);
-    --lang-accent-soft: rgba(79, 140, 255, 0.22);
-    --lang-accent-strong: rgba(79, 140, 255, 0.75);
-    --lang-accent-max: rgba(79, 140, 255, 1);
+    --lang-accent-soft: rgba(79, 127, 224, 0.18);
+    --lang-accent-strong: rgba(79, 127, 224, 0.68);
+    --lang-accent-max: rgba(79, 127, 224, 0.95);
 
-    --icon-main: #1d2742;
-    --icon-secondary: #6f84a8;
+    --icon-main: #22324f;
+    --icon-secondary: #72809a;
 
-    --lang-dropdown-bg-top: rgba(255, 255, 255, 0.98);
-    --lang-dropdown-bg-bottom: rgba(241, 245, 255, 0.98);
-    --lang-dropdown-text: #1d2742;
+    --lang-dropdown-bg-top: rgba(255, 255, 255, 0.96);
+    --lang-dropdown-bg-bottom: rgba(242, 246, 252, 0.96);
+    --lang-dropdown-text: #24324a;
     --lang-dropdown-text-active: #ffffff;
     --lang-dropdown-text-hover: #10182b;
 
     /* =========================
        LOGO / NAVBAR
     ========================= */
-    --logo-bg: #eef3ff;
-    --logo-shadow: rgba(79, 140, 255, 0.12);
+    --logo-bg: #eef3fa;
+    --logo-shadow: rgba(79, 127, 224, 0.10);
     --logo-text: #10182b;
     --logo-accent: var(--accent-primary);
 
-    --nav-link: #1d2742;
+    --nav-link: #26344b;
     --nav-link-active: var(--accent-primary);
 
-    --nav-btn-gradient-start: #4f8cff;
-    --nav-btn-gradient-end: #8bb8ff;
+    --nav-btn-gradient-start: #4f7fe0;
+    --nav-btn-gradient-end: #90b2ea;
     --nav-btn-text: #ffffff;
-    --nav-btn-shadow: rgba(79, 140, 255, 0.18);
-    --nav-btn-shadow-hover: rgba(79, 140, 255, 0.26);
+    --nav-btn-shadow: rgba(79, 127, 224, 0.16);
+    --nav-btn-shadow-hover: rgba(79, 127, 224, 0.24);
 
-    --hamburger-gradient-start: #4f8cff;
-    --hamburger-gradient-end: #8bb8ff;
-    --hamburger-glow: rgba(79, 140, 255, 0.35);
+    --hamburger-gradient-start: #4f7fe0;
+    --hamburger-gradient-end: #90b2ea;
+    --hamburger-glow: rgba(79, 127, 224, 0.28);
 
     /* =========================
        MOBILE DRAWER
     ========================= */
-    --drawer-bg-main: #f7f9ff;
+    --drawer-bg-main: #f4f7fc;
     --drawer-bg-top: #ffffff;
-    --drawer-bg-bottom: #edf3ff;
+    --drawer-bg-bottom: #edf2f8;
 
-    --drawer-glow-primary: rgba(79, 140, 255, 0.12);
-    --drawer-glow-secondary: rgba(122, 92, 255, 0.10);
-    --drawer-glow-tertiary: rgba(47, 199, 161, 0.08);
-    --drawer-glow-quaternary: rgba(79, 140, 255, 0.08);
+    --drawer-glow-primary: rgba(79, 127, 224, 0.10);
+    --drawer-glow-secondary: rgba(122, 107, 232, 0.08);
+    --drawer-glow-tertiary: rgba(58, 168, 143, 0.06);
+    --drawer-glow-quaternary: rgba(79, 127, 224, 0.06);
 
-    --drawer-overlay-bg: rgba(15, 23, 42, 0.28);
+    --drawer-overlay-bg: rgba(15, 23, 42, 0.22);
 
-    --drawer-shadow-main: rgba(15, 23, 42, 0.18);
-    --drawer-border: rgba(79, 140, 255, 0.10);
+    --drawer-shadow-main: rgba(15, 23, 42, 0.14);
+    --drawer-border: rgba(79, 127, 224, 0.08);
 
-    --drawer-title: rgba(29, 39, 66, 0.55);
+    --drawer-title: rgba(36, 50, 74, 0.54);
 
-    --drawer-close-bg: rgba(79, 140, 255, 0.08);
-    --drawer-close-hover-bg: rgba(79, 140, 255, 0.16);
-    --drawer-close-icon: #1d2742;
-    --drawer-close-glow: rgba(79, 140, 255, 0.24);
+    --drawer-close-bg: rgba(79, 127, 224, 0.07);
+    --drawer-close-hover-bg: rgba(79, 127, 224, 0.14);
+    --drawer-close-icon: #24324a;
+    --drawer-close-glow: rgba(79, 127, 224, 0.18);
 
-    --drawer-link: #1d2742;
-    --drawer-link-hover-bg: rgba(79, 140, 255, 0.08);
-    --drawer-link-active: #4f8cff;
+    --drawer-link: #24324a;
+    --drawer-link-hover-bg: rgba(79, 127, 224, 0.07);
+    --drawer-link-active: #4f7fe0;
 
-    --drawer-link-accent-soft: rgba(79, 140, 255, 0.10);
-    --drawer-link-border: rgba(79, 140, 255, 0.18);
-    --drawer-link-glow: rgba(79, 140, 255, 0.18);
+    --drawer-link-accent-soft: rgba(79, 127, 224, 0.08);
+    --drawer-link-border: rgba(79, 127, 224, 0.14);
+    --drawer-link-glow: rgba(79, 127, 224, 0.14);
 
-    --drawer-cta-bg-start: #4f8cff;
-    --drawer-cta-bg-end: #8bb8ff;
+    --drawer-cta-bg-start: #4f7fe0;
+    --drawer-cta-bg-end: #90b2ea;
     --drawer-cta-text: #ffffff;
-    --drawer-cta-glow: rgba(79, 140, 255, 0.22);
+    --drawer-cta-glow: rgba(79, 127, 224, 0.18);
 
     /* =========================
        HERO / CONTENT
     ========================= */
     --hero-bg-start: #ffffff;
-    --hero-bg-mid: #eef4ff;
-    --hero-bg-end: #dceaff;
-    --hero-shadow: rgba(79, 140, 255, 0.10);
+    --hero-bg-mid: #f0f5fd;
+    --hero-bg-end: #dfeaf8;
+    --hero-shadow: rgba(79, 127, 224, 0.08);
 
     --hero-text-main: #10182b;
-    --hero-text-muted: #4f5d79;
+    --hero-text-muted: #54647c;
     --hero-accent: var(--accent-primary);
     --hero-accent-secondary: var(--accent-secondary);
-    --hero-accent-warm: #d48b2a;
+    --hero-accent-warm: #c98b2f;
 
-    --label-bg-default: #edf3ff;
-    --label-text-default: #1d2742;
-    --label-green-start: #d7f6ef;
-    --label-green-end: #baf1e3;
-    --label-blue-start: #dceaff;
-    --label-blue-end: #c8dbff;
-    --label-yellow-start: #fff1cf;
-    --label-yellow-end: #ffd9a8;
-    --label-shadow: rgba(15, 23, 42, 0.06);
+    --label-bg-default: #edf3fa;
+    --label-text-default: #24324a;
+    --label-green-start: #e1f4ef;
+    --label-green-end: #c9eee4;
+    --label-blue-start: #e2ebfa;
+    --label-blue-end: #d1ddf3;
+    --label-yellow-start: #fbefcf;
+    --label-yellow-end: #f4d8a6;
+    --label-shadow: rgba(15, 23, 42, 0.05);
 
-    --hero-btn-main-start: #4f8cff;
-    --hero-btn-main-end: #8bb8ff;
+    --hero-btn-main-start: #4f7fe0;
+    --hero-btn-main-end: #90b2ea;
     --hero-btn-text-dark: #ffffff;
-    --hero-btn-outline: #4f8cff;
-    --hero-btn-shadow: rgba(79, 140, 255, 0.18);
-    --hero-btn-hover-shadow: rgba(79, 140, 255, 0.12);
+    --hero-btn-outline: #4f7fe0;
+    --hero-btn-shadow: rgba(79, 127, 224, 0.16);
+    --hero-btn-hover-shadow: rgba(79, 127, 224, 0.10);
 
-    --badge-bg: rgba(79, 140, 255, 0.08);
-    --badge-text: #1d2742;
-    --badge-mint-bg: rgba(47, 199, 161, 0.10);
-    --badge-mint-text: #1f7f68;
-    --badge-violet-bg: rgba(122, 92, 255, 0.10);
-    --badge-violet-text: #5b48c8;
-    --badge-yellow-bg: rgba(255, 193, 77, 0.14);
-    --badge-yellow-text: #9a6410;
-    --badge-blue-bg: rgba(79, 140, 255, 0.10);
-    --badge-blue-text: #355ea8;
+    --badge-bg: rgba(79, 127, 224, 0.07);
+    --badge-text: #24324a;
+    --badge-mint-bg: rgba(58, 168, 143, 0.10);
+    --badge-mint-text: #277867;
+    --badge-violet-bg: rgba(122, 107, 232, 0.10);
+    --badge-violet-text: #5d50b9;
+    --badge-yellow-bg: rgba(255, 193, 77, 0.12);
+    --badge-yellow-text: #8e6316;
+    --badge-blue-bg: rgba(79, 127, 224, 0.10);
+    --badge-blue-text: #345ca2;
 
-    --card-bg-soft: rgba(255, 255, 255, 0.72);
-    --card-bg-strong: rgba(244, 248, 255, 0.88);
-    --card-shadow-soft: rgba(15, 23, 42, 0.08);
-    --card-shadow-strong: rgba(15, 23, 42, 0.10);
+    --card-bg-soft: rgba(255, 255, 255, 0.66);
+    --card-bg-strong: rgba(246, 249, 253, 0.84);
+    --card-shadow-soft: rgba(15, 23, 42, 0.06);
+    --card-shadow-strong: rgba(15, 23, 42, 0.08);
 
-    --stat-bg: rgba(255, 255, 255, 0.80);
-    --stat-number: #4f8cff;
-    --stat-title: #3a4863;
+    --stat-bg: rgba(255, 255, 255, 0.74);
+    --stat-number: #4f7fe0;
+    --stat-title: #415169;
 
-    --about-title: #2f6ee6;
-    --about-text: #42506c;
-    --about-link: #4f8cff;
-    --about-link-hover: #2fc7a1;
+    --about-title: #2f69d8;
+    --about-text: #43546d;
+    --about-link: #4f7fe0;
+    --about-link-hover: #3aa88f;
 
-    --feature-hover-shadow: rgba(79, 140, 255, 0.12);
+    --feature-hover-shadow: rgba(79, 127, 224, 0.10);
 
-    --faq-bg: rgba(255, 255, 255, 0.72);
-    --faq-bg-active: rgba(79, 140, 255, 0.08);
-    --faq-question: #2f6ee6;
-    --faq-shadow: rgba(15, 23, 42, 0.08);
-    --faq-shadow-hover: rgba(15, 23, 42, 0.10);
+    --faq-bg: rgba(255, 255, 255, 0.68);
+    --faq-bg-active: rgba(79, 127, 224, 0.07);
+    --faq-question: #2f69d8;
+    --faq-shadow: rgba(15, 23, 42, 0.06);
+    --faq-shadow-hover: rgba(15, 23, 42, 0.08);
 
     /* =========================
        COMMANDS PAGE
     ========================= */
     --commands-hero-bg-start: #ffffff;
-    --commands-hero-bg-mid: #eef4ff;
-    --commands-hero-bg-end: #dceaff;
-    --commands-hero-shadow: rgba(79, 140, 255, 0.12);
+    --commands-hero-bg-mid: #f0f5fd;
+    --commands-hero-bg-end: #dfeaf8;
+    --commands-hero-shadow: rgba(79, 127, 224, 0.10);
 
-    --commands-panel-bg-top: rgba(255, 255, 255, 0.78);
-    --commands-panel-bg-bottom: rgba(241, 246, 255, 0.90);
+    --commands-panel-bg-top: rgba(255, 255, 255, 0.74);
+    --commands-panel-bg-bottom: rgba(242, 246, 252, 0.88);
     --commands-panel-radius: 30px;
-    --commands-panel-shadow-main: rgba(15, 23, 42, 0.08);
-    --commands-panel-shadow-inset: rgba(255, 255, 255, 0.60);
+    --commands-panel-shadow-main: rgba(15, 23, 42, 0.06);
+    --commands-panel-shadow-inset: rgba(255, 255, 255, 0.55);
 
-    --search-bg-start: rgba(255, 255, 255, 0.96);
-    --search-bg-mid: rgba(243, 247, 255, 0.96);
-    --search-bg-end: rgba(255, 255, 255, 0.96);
+    --search-bg-start: rgba(255, 255, 255, 0.94);
+    --search-bg-mid: rgba(245, 248, 253, 0.94);
+    --search-bg-end: rgba(255, 255, 255, 0.94);
 
-    --search-text: #1d2742;
-    --search-text-preview: rgba(77, 93, 121, 0.55);
-    --search-border: rgba(79, 140, 255, 0.22);
-    --search-accent: #4f8cff;
-    --search-glow-soft: rgba(79, 140, 255, 0.18);
-    --search-glow-strong: rgba(79, 140, 255, 0.45);
-    --search-shadow-dark: rgba(15, 23, 42, 0.10);
-    --search-shadow-focus-dark: rgba(15, 23, 42, 0.14);
+    --search-text: #24324a;
+    --search-text-preview: rgba(84, 100, 124, 0.52);
+    --search-border: rgba(79, 127, 224, 0.18);
+    --search-accent: #4f7fe0;
+    --search-glow-soft: rgba(79, 127, 224, 0.14);
+    --search-glow-strong: rgba(79, 127, 224, 0.34);
+    --search-shadow-dark: rgba(15, 23, 42, 0.08);
+    --search-shadow-focus-dark: rgba(15, 23, 42, 0.12);
 
-    --filter-bg: rgba(79, 140, 255, 0.08);
-    --filter-bg-hover: rgba(79, 140, 255, 0.12);
-    --filter-active-start: #4f8cff;
-    --filter-active-end: #8bb8ff;
+    --filter-bg: rgba(79, 127, 224, 0.07);
+    --filter-bg-hover: rgba(79, 127, 224, 0.10);
+    --filter-active-start: #4f7fe0;
+    --filter-active-end: #90b2ea;
     --filter-active-text: #ffffff;
-    --filter-active-shadow: rgba(79, 140, 255, 0.18);
-    --filter-text: #1d2742;
+    --filter-active-shadow: rgba(79, 127, 224, 0.16);
+    --filter-text: #24324a;
 
-    --accordion-bg-top: rgba(255, 255, 255, 0.74);
-    --accordion-bg-bottom: rgba(241, 246, 255, 0.88);
+    --accordion-bg-top: rgba(255, 255, 255, 0.70);
+    --accordion-bg-bottom: rgba(242, 246, 252, 0.84);
     --accordion-radius: 22px;
-    --accordion-shadow: rgba(15, 23, 42, 0.08);
-    --accordion-title: #2f6ee6;
+    --accordion-shadow: rgba(15, 23, 42, 0.06);
+    --accordion-title: #2f69d8;
 
-    --command-text-main: #1d2742;
-    --command-text-muted: #4f5d79;
-    --command-name: #355ea8;
-    --command-strong: #2f6ee6;
-    --command-divider: rgba(79, 140, 255, 0.18);
-    --command-divider-glow: rgba(79, 140, 255, 0.12);
+    --command-text-main: #24324a;
+    --command-text-muted: #54647c;
+    --command-name: #345ca2;
+    --command-strong: #2f69d8;
+    --command-divider: rgba(79, 127, 224, 0.14);
+    --command-divider-glow: rgba(79, 127, 224, 0.10);
 
-    --usage-bg: rgba(79, 140, 255, 0.08);
-    --usage-text: #2f6ee6;
+    --usage-bg: rgba(79, 127, 224, 0.08);
+    --usage-text: #2f69d8;
 
     /* =========================
        STATUS / REPORT
     ========================= */
     --status-hero-bg-start: #ffffff;
-    --status-hero-bg-mid: #eef4ff;
-    --status-hero-bg-end: #dceaff;
+    --status-hero-bg-mid: #f0f5fd;
+    --status-hero-bg-end: #dfeaf8;
 
-    --status-hero-shadow-main: rgba(79, 140, 255, 0.12);
-    --status-hero-shadow-glow: rgba(79, 140, 255, 0.08);
+    --status-hero-shadow-main: rgba(79, 127, 224, 0.10);
+    --status-hero-shadow-glow: rgba(79, 127, 224, 0.08);
     --status-hero-border: rgba(15, 23, 42, 0.05);
 
-    --status-title: #2f6ee6;
-    --status-title-glow: rgba(79, 140, 255, 0.18);
+    --status-title: #2f69d8;
+    --status-title-glow: rgba(79, 127, 224, 0.16);
 
-    --status-text-main: #1d2742;
-    --status-text-muted: #4f5d79;
-    --status-text-soft: #60718d;
+    --status-text-main: #24324a;
+    --status-text-muted: #54647c;
+    --status-text-soft: #647489;
 
-    --status-row-border: rgba(15, 23, 42, 0.08);
+    --status-row-border: rgba(15, 23, 42, 0.07);
 
-    --status-badge-bg: rgba(79, 140, 255, 0.08);
-    --status-badge-text: #1d2742;
-    --status-badge-border: rgba(79, 140, 255, 0.16);
+    --status-badge-bg: rgba(79, 127, 224, 0.07);
+    --status-badge-text: #24324a;
+    --status-badge-border: rgba(79, 127, 224, 0.14);
 
-    --status-ok-start: #4f8cff;
-    --status-ok-end: #8bb8ff;
+    --status-ok-start: #4f7fe0;
+    --status-ok-end: #90b2ea;
     --status-ok-text: #ffffff;
-    --status-ok-glow: rgba(79, 140, 255, 0.14);
+    --status-ok-glow: rgba(79, 127, 224, 0.12);
 
     --status-err-start: #ff7a8f;
     --status-err-end: #ffb0bf;
@@ -6706,26 +6706,26 @@ main.legal-main {
     --status-warn-end: #ffd98a;
     --status-warn-text: #5f3e00;
 
-    --status-tab-bg: rgba(79, 140, 255, 0.08);
-    --status-tab-text: #1d2742;
-    --status-tab-active-start: #4f8cff;
-    --status-tab-active-end: #8bb8ff;
+    --status-tab-bg: rgba(79, 127, 224, 0.07);
+    --status-tab-text: #24324a;
+    --status-tab-active-start: #4f7fe0;
+    --status-tab-active-end: #90b2ea;
     --status-tab-active-text: #ffffff;
-    --status-tab-active-shadow: rgba(79, 140, 255, 0.18);
+    --status-tab-active-shadow: rgba(79, 127, 224, 0.16);
 
-    --uptime-online: #4f8cff;
-    --uptime-online-glow: rgba(79, 140, 255, 0.22);
+    --uptime-online: #4f7fe0;
+    --uptime-online-glow: rgba(79, 127, 224, 0.18);
     --uptime-offline: #ff7a8f;
     --uptime-good: #9ed6ff;
     --uptime-warn: #ffc84d;
 
     --tooltip-bg: rgba(255, 255, 255, 0.96);
-    --tooltip-text: #1d2742;
-    --tooltip-shadow: rgba(15, 23, 42, 0.12);
+    --tooltip-text: #24324a;
+    --tooltip-shadow: rgba(15, 23, 42, 0.10);
 
-    --stats-box-bg: rgba(255, 255, 255, 0.78);
-    --stats-head: #4f5d79;
-    --stats-number: #4f8cff;
+    --stats-box-bg: rgba(255, 255, 255, 0.72);
+    --stats-head: #4a5b72;
+    --stats-number: #4f7fe0;
 
     --report-desc: #4f5d79;
 
@@ -6733,47 +6733,47 @@ main.legal-main {
     --problem-user-end: #ffc0d1;
     --problem-user-text: #5a1731;
 
-    --problem-web-start: #4f8cff;
-    --problem-web-end: #8bb8ff;
+    --problem-web-start: #4f7fe0;
+    --problem-web-end: #90b2ea;
     --problem-web-text: #ffffff;
 
     --problem-discord-start: #7c9cff;
     --problem-discord-end: #b2c7ff;
     --problem-discord-text: #13204a;
 
-    --form-bg: rgba(79, 140, 255, 0.08);
-    --form-shadow: rgba(79, 140, 255, 0.10);
+    --form-bg: rgba(79, 127, 224, 0.07);
+    --form-shadow: rgba(79, 127, 224, 0.08);
 
-    --msg-success-bg: rgba(47, 199, 161, 0.12);
-    --msg-success-text: #1f7f68;
-    --msg-error-bg: rgba(255, 122, 143, 0.12);
+    --msg-success-bg: rgba(58, 168, 143, 0.10);
+    --msg-success-text: #277867;
+    --msg-error-bg: rgba(255, 122, 143, 0.10);
     --msg-error-text: #c94c63;
 
     /* =========================
        ERROR / FOOTER / LEGAL
     ========================= */
-    --hero-shadow-soft: rgba(79, 140, 255, 0.10);
-    --hero-shadow-strong: rgba(79, 140, 255, 0.16);
-    --hero-glow-mint: rgba(47, 199, 161, 0.10);
+    --hero-shadow-soft: rgba(79, 127, 224, 0.08);
+    --hero-shadow-strong: rgba(79, 127, 224, 0.12);
+    --hero-glow-mint: rgba(58, 168, 143, 0.08);
     --hero-border-soft: rgba(15, 23, 42, 0.05);
 
-    --error-glow-primary: rgba(79, 140, 255, 0.22);
-    --error-glow-secondary: rgba(122, 92, 255, 0.12);
+    --error-glow-primary: rgba(79, 127, 224, 0.16);
+    --error-glow-secondary: rgba(122, 107, 232, 0.10);
 
-    --footer-bg-top: #f6f8ff;
-    --footer-bg-bottom: #e7efff;
-    --footer-text-main: #1d2742;
-    --footer-text-muted: #4f5d79;
-    --footer-text-soft: #71809c;
-    --footer-link: #4f8cff;
-    --footer-link-hover: #2fc7a1;
+    --footer-bg-top: #f3f6fb;
+    --footer-bg-bottom: #e8eef7;
+    --footer-text-main: #24324a;
+    --footer-text-muted: #54647c;
+    --footer-text-soft: #718096;
+    --footer-link: #4f7fe0;
+    --footer-link-hover: #3aa88f;
 
-    --legal-card-bg-top: rgba(255, 255, 255, 0.82);
-    --legal-card-bg-bottom: rgba(241, 246, 255, 0.92);
-    --legal-shadow-dark: rgba(15, 23, 42, 0.10);
-    --legal-glow-soft: rgba(79, 140, 255, 0.08);
+    --legal-card-bg-top: rgba(255, 255, 255, 0.76);
+    --legal-card-bg-bottom: rgba(242, 246, 252, 0.88);
+    --legal-shadow-dark: rgba(15, 23, 42, 0.08);
+    --legal-glow-soft: rgba(79, 127, 224, 0.06);
 
-    --chip-bg: rgba(79, 140, 255, 0.10);
-    --chip-border: rgba(79, 140, 255, 0.18);
-    --chip-text: #1d2742;
+    --chip-bg: rgba(79, 127, 224, 0.08);
+    --chip-border: rgba(79, 127, 224, 0.14);
+    --chip-text: #24324a;
 }
