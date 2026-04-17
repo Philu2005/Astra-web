@@ -136,7 +136,11 @@ if ($result->num_rows > 0) {
                 </div>
 
                 <div class="astra-btn-row">
-                    <a href="/invite.php" class="astra-btn main"><?= $t['invite_bot'] ?></a>
+                    <a href="/invite.php?src=hero"
+                       class="astra-btn main"
+                       onclick="window.umami?.track('invite_click', { source: 'hero' })">
+                        <?= $t['invite_bot'] ?>
+                    </a>
                     <a href="/support.php" class="astra-btn outline"><?= $t['support_server'] ?></a>
                 </div>
 
