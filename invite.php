@@ -70,6 +70,7 @@ $bgImage = 'https://cdn.discordapp.com/attachments/1113404918414458991/140591518
         }
         a.btn:hover { background: #4752C4; }
     </style>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="caafee2b-2478-4148-8e69-3ebecc18416c"></script>
 </head>
 <body>
 <div class="card">

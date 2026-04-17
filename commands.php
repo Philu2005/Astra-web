@@ -11,6 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/lang.php';
     <link rel="icon" href="/public/favicon_transparent.png" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css?v=4.3" />
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="caafee2b-2478-4148-8e69-3ebecc18416c"></script>
 </head>
 <body>
 
