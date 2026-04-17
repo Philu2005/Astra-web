@@ -113,7 +113,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/lang.php';
         <a href="https://astra-bot.de/status" class="nav-link"><?= $t['nav_status'] ?></a>
         <a href="https://astra-bot.de/report" class="nav-link"><?= $t['nav_report'] ?></a>
 
-        <a href="https://astra-bot.de/invite" class="nav-btn"><?= $t['nav_invite'] ?></a>
+        <a href="https://astra-bot.de/invite?src=navbar"
+           class="nav-btn"
+           onclick="umami.track('invite_click', { source: 'navbar' })">
+            <?= $t['nav_invite'] ?>
+        </a>
     </div>
 
     <div class="astra-nav-lang">
